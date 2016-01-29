@@ -1,0 +1,31 @@
+{
+    "name":        "microstudi/silex-intervention-image",
+    "type":        "library",
+    "keywords":   ["silex", "intervention-image", "InterventionImageServiceProvider"],
+    "description": "Microstudi/Intervention Image service provider for Silex.",
+    "license":     "MIT",
+    "authors": [
+        {
+            "name":  "Ivan",
+            "email": "ivan@microstudi.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Microstudi\\Silex\\InterventionImage\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "intervention/image": "~2.0"
+    },
+    "require-dev": {
+        "silex/silex": "*",
+        "phpunit/phpunit": "~4.7"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
