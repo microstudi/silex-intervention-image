@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of Intervention Image Service Provider.
  *
