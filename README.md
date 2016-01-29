@@ -10,6 +10,14 @@
 
 - PHP >= 5.3.3
 
+## Install
+
+Using composer:
+
+```
+composer require microstudi/silex-intervention-image
+```
+
 ## Usage
 
 ```php
