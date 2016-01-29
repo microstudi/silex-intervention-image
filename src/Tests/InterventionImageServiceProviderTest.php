@@ -11,7 +11,6 @@ namespace Microstudi\Silex\InterventionImage\Tests;
 
 use Microstudi\Silex\InterventionImage\InterventionImageServiceProvider;
 use Silex\Application;
-use Silex\Provider\UrlGeneratorServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 /**
  * Class InterventionImageServiceProviderTest.
@@ -28,7 +27,6 @@ class InterventionImageServiceProviderTest extends \PHPUnit_Framework_TestCase
         $app = new Application();
         $provider = new InterventionImageServiceProvider();
         $app
-            ->register(new UrlGeneratorServiceProvider())
             ->register($provider)
             ;
         return $app;
