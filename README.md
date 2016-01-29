@@ -3,6 +3,7 @@
  [Intervention/image](http://image.intervention.io/) service provider for [Silex](http://silex.sensiolabs.org)
 
 [![Downloads](https://img.shields.io/packagist/dt/microstudi/silex-intervention-image.svg?style=flat-square)](https://packagist.org/packages/microstudi/silex-captcha)
+[!Travis status](https://travis-ci.org/microstudi/silex-intervention-image.svg?branch=master)
 [![License](https://img.shields.io/packagist/l/microstudi/silex-captcha.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## Requirements
