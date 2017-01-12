@@ -14,13 +14,14 @@
 namespace Microstudi\Silex\InterventionImage;
 
 use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\ServiceProviderInterface;
+use Pimple\Container;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Image;
 
 class InterventionImageServiceProvider implements ServiceProviderInterface
 {
-    public function register(Application $app)
+    public function register(Container $app)
     {
         if (class_exists('\Imagick')) {
             $app['intervention.driver'] = 'imagick';
@@ -28,9 +29,9 @@ class InterventionImageServiceProvider implements ServiceProviderInterface
             $app['intervention.driver'] = 'gd';
         }
 
-        $app['intervention.image'] = $app->share(function(Application $app) {
+        $app['intervention.image'] = function(Application $app) {
             return new ImageManager(array('driver' => $app['intervention.driver']));
-        });
+        };
 
         /**
          * For calling like:
