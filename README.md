@@ -8,7 +8,7 @@
 
 ## Requirements
 
-- PHP >= 5.3.3
+- PHP >= 5.5.9 (same as Silex 2.0)
 
 ## Install
 
@@ -55,9 +55,10 @@ $ vendor/bin/phpunit
 
 - Locked version Silex 1 for 1.0 of this service
 
-#### 2.0.0
+#### 2.0.1
 
 - Updated to Silex 2.0
+- Removed support for PHP versions lower thant 5.6
 
 # LICENSE
 
