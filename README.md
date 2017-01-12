@@ -51,6 +51,14 @@ $ vendor/bin/phpunit
 
 - First release
 
+#### 1.0.3
+
+- Locked version Silex 1 for 1.0 of this service
+
+#### 2.0.0
+
+- Updated to Silex 2.0
+
 # LICENSE
 
 The MIT LICENSE (MIT)
